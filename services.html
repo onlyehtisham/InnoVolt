@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | InnoVolt</title>
+  <link rel="stylesheet" href="services.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="logo">InnoVolt</div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services-section">
+    <div>
+      <h1 class="section-title">Our Services</h1>
+      <p class="section-subtitle">We specialize in modern and innovative electrical solutions.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-dumbbell"></i>
+          <h3>Treadmill Repairing</h3>
+          <p>Professional treadmill repair services for home and gym equipment.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-motorcycle"></i>
+          <h3>Electric Scooty Repair</h3>
+          <p>Expert repair and maintenance for all types of electric scooters.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-battery-full"></i>
+          <h3>Custom Batteries & Chargers</h3>
+          <p>Manufacturing tailored power solutions that match your needs.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-solar-panel"></i>
+          <h3>Solar Installation</h3>
+          <p>High-efficiency solar panel installation for homes and businesses.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-microchip"></i>
+          <h3>PCB Designing</h3>
+          <p>Precise and optimized PCB designs for electronic devices and projects.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Student Projects</h3>
+          <p>Guidance and development of university and college level projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      })
+  </script>
+</body>
+
+</html>
